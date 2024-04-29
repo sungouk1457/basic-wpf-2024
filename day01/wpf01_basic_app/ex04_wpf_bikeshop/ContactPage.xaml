@@ -1,0 +1,18 @@
+﻿<Page x:Class="ex04_wpf_bikeshop.ContactPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ex04_wpf_bikeshop"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ContactPage">
+
+    <Grid>
+        <Label Content="받는 사람" HorizontalAlignment="Left" Margin="32,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.118,0.189"/>
+        <Label Content="내용" HorizontalAlignment="Left" Margin="32,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.481,-0.126"/>
+        <TextBox HorizontalAlignment="Left" Margin="98,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="667" ToolTip="받는사람 주소"/>
+        <TextBox Margin="98,92,35,25" TextWrapping="Wrap" ToolTip="내용 입력"/>
+
+    </Grid>
+</Page>
