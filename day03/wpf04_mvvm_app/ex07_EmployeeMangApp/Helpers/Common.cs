@@ -5,8 +5,8 @@
         public static readonly string ConnString = "Data Source=localhost;" +
                                                    "Initial Catalog=EMS;" +
                                                    "Persist Security Info=True;" +
-                                                   "User ID=sa;" +
+                                                   "User ID=ems_user;" +
                                                    "Encrypt=False;" + 
-                                                   "password = mssql_p@ss";
+                                                   "password = ems_p@ss";
     }
 }
