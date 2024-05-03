@@ -1,5 +1,5 @@
 ﻿using Caliburn.Micro;
-using ex07_EmployeeMangApp.ViewModels;
+using ex07_EmployeeMngApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +7,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace ex07_EmployeeMangApp
+namespace ex07_EmployeeMngApp
 {
     public class Bootstrapper : BootstrapperBase
     {
-        public Bootstrapper()
-        { 
+        public Bootstrapper() 
+        {
             Initialize();
         }
 

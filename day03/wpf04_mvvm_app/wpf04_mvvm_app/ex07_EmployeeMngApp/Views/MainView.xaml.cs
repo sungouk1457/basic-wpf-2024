@@ -12,16 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace ex07_EmployeeMangApp.ViewModels
+namespace ex07_EmployeeMngApp.Views
 {
     /// <summary>
-    /// MainViewModel.xaml에 대한 상호 작용 논리
+    /// MainView.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MainViewModel : Window
+    public partial class MainView : Window
     {
-        public MainViewModel()
+        public MainView()
         {
             InitializeComponent();
         }
+
     }
 }
