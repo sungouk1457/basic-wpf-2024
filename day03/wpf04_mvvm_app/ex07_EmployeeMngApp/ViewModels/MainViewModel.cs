@@ -126,7 +126,7 @@ namespace ex07_EmployeeMngApp.ViewModels
         {
             get
             {
-               if( string.IsNullOrEmpty(empName) && Salary == 0 && string.IsNullOrEmpty(DeptName))
+               if( string.IsNullOrEmpty(empName) || Salary == 0 || string.IsNullOrEmpty(DeptName))
                     return false;
                else
                     return true;  
@@ -158,7 +158,8 @@ namespace ex07_EmployeeMngApp.ViewModels
                 cmd.Parameters.Add(prmSalary);
                 SqlParameter prmDeptName = new SqlParameter(@"DeptName", DeptName);
                 cmd.Parameters.Add(prmDeptName);
-                SqlParameter prmAddr = new SqlParameter(@"Addr", Addr);
+                SqlParameter prmAddr = new SqlParameter(@"Addr",Addr ?? (object)DBNull.Value); 
+                //주소가 빈값일때 컬럼에 null값을 입력
                 cmd.Parameters.Add(prmAddr);
                 if(Id != 0)
                 {
@@ -177,6 +178,7 @@ namespace ex07_EmployeeMngApp.ViewModels
                     MessageBox.Show("저장실패");
                 }
                 GetEmployees();
+                NewEmployee();
             }
         }
 
@@ -216,6 +218,11 @@ namespace ex07_EmployeeMngApp.ViewModels
                 MessageBox.Show("삭제불가");
                 return;
             }
+
+            if(MessageBox.Show("삭제하시겠습니까?","삭제여부",MessageBoxButton.YesNo,MessageBoxImage.Question) == MessageBoxResult.No)
+            {
+                return;
+            }
             using(SqlConnection conn = new SqlConnection(Helpers.Common.COONSTRING))
             {
                 conn.Open();
@@ -234,6 +241,7 @@ namespace ex07_EmployeeMngApp.ViewModels
                 }
 
                 GetEmployees();
+                NewEmployee();//모든 입력컨트롤 초기화
             }
         }
 
