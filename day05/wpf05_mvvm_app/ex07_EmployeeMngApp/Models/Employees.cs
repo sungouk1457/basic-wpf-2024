@@ -14,11 +14,11 @@ namespace ex07_EmployeeMngApp.Models
         public string DeptName { get; set; }
         public string Addr {  get; set; }
 
-        public static readonly string SELECT_QUERY = @"SELECT [id]
-                                                             ,[EmpName]
-                                                             ,[Salary]
-                                                             ,[DeptName]
-                                                             ,[Addr]
+        public static readonly string SELECT_QUERY = @"SELECT [Id]
+                                                            , [EmpName]
+                                                            , [Salary]
+                                                            , [DeptName]
+                                                            , [Addr]
                                                          FROM [dbo].[Employees]";
         public static readonly string INSERT_QUERY = @"INSERT INTO [dbo].[Employees]
                                                                  ( [EmpName]
