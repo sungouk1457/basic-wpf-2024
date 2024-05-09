@@ -61,5 +61,9 @@ namespace ex10_MovieFinder2024.Models
         //public static readonly string UPDATE_QUERY = @"";
 
         public static readonly string DELETE_QUERY = @"DELETE FROM [dbo].[MovieItem] WHERE Id = @Id";
+
+        public static readonly string CHECK_QUERY = @"SELECT COUNT(*) 
+                                                        FROM MovieItem
+                                                       WHERE Id = @Id";
     }
 }
