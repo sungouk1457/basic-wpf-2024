@@ -60,7 +60,7 @@ namespace ex11_Gimhae_FinDust.Models
                                                             , [Pm25_after]
                                                             , [State]
                                                             , [Timestamp]
-                                                            , [Company_id]
+                               {                             , [Company_id]
                                                             , [Company_name]
                                                          FROM [dbo].[Dustsensor]
                                                         WHERE CONVERT(CHAR(10), GETDATE(), 23) = @Timestamp";

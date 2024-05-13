@@ -160,3 +160,8 @@ https://github.com/sungouk1457/basic-wpf-2024/assets/131221230/3138764d-064d-49a
 
 ## 8일차
 - WPF 개인프로젝트 포트폴리오 작업
+    - 데이터포털 API 사용할 것
+    - 7일차 소스 참조
+    - 현재 리포지토리에 사진과 함께 올릴 것
+
+    ![저장화면](https://raw.githubusercontent.com/sungouk1457/basic-wpf-2024/main/images/project.png)
